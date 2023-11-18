@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Comic Creator</title>
+</head>
+<body>
+  <div id="app">
+    <form id="comicForm">
+      <h2>Comic Panels</h2>
+
+      <!-- Input fields for 10 comic panels -->
+
+      <!-- Panel 1 -->
+      <label for="panel1">Panel 1:</label>
+      <textarea id="panel1" name="panel1" rows="4" cols="50" placeholder="Enter text for Panel 1"></textarea>
+
+      <!-- Panel 2 -->
+      <label for="panel2">Panel 2:</label>
+      <textarea id="panel2" name="panel2" rows="4" cols="50" placeholder="Enter text for Panel 2"></textarea>
+
+
+      <h2>Bonus Features (Speech Bubbles)</h2>
+
+      <!-- Speech Bubble for Panel 1 -->
+      <label for="speechBubble1">Speech Bubble (Panel 1):</label>
+      <textarea id="speechBubble1" name="speechBubble1" rows="3" cols="50" placeholder="Enter text for Speech Bubble in Panel 1"></textarea>
+
+      <!-- Submit Button to Trigger API Call -->
+      <button type="submit">Generate Comic</button>
+    </form>
+    
+    <!-- Display area for generated comic panels -->
+    <div id="comicDisplay"></div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
